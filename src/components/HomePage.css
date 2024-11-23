@@ -1,0 +1,351 @@
+/* General Styling */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.homepage-container {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding-bottom: 75px;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Welcome Section */
+.welcome-section h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  width: 100%; /* Ensure full width */
+  margin: 0 auto;
+}
+
+/* Property Dropdown */
+.property-dropdown {
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column; /* Adjust to stack items vertically */
+  align-items: center;
+  width: 100%; /* Prevent overflow */
+}
+
+.property-header {
+  display: flex;
+  flex-direction: column; /* Adjust for smaller screens */
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Ensure full width */
+}
+
+.property-image {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.property-select {
+  font-size: 16px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+}
+
+.property-select option {
+  padding: 10px;
+}
+
+/* Features Section (Cards) */
+.features-section {
+  margin-bottom: 20px;
+  width: 100%; /* Ensure full width */
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust grid for smaller devices */
+  gap: 15px;
+  margin-bottom: 20px;
+  width: 100%; /* Ensure full width */
+  box-sizing: border-box; /* Include padding in calculations */
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Tenants/Expense Section */
+.tenants-expense-section {
+  margin-top: 20px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Prevent overflow */
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap; /* Ensure buttons stack on smaller screens */
+  width: 100%;
+}
+
+.toggle-buttons button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-buttons .active {
+  background-color: #0056b3;
+}
+
+.toggle-buttons button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.toggle-content {
+  margin-top: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100%; /* Prevent overflow */
+}
+
+/* Tenant and Expense List Styles */
+#tenant-list,
+#expense-content {
+  padding: 15px;
+  max-width: 100%; /* Prevent overflow */
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#tenant-list h3,
+#expense-content h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#tenant-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#tenant-list li {
+  background-color: #f9f9f9;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#tenant-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#tenant-list a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  display: block;
+}
+
+#tenant-list a:hover {
+  color: #007BFF;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .homepage-container {
+    padding: 10px;
+  }
+
+  .features-section {
+    margin-bottom: 15px;
+  }
+
+  .property-select {
+    width: 100%;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Smaller grid adjustments */
+    gap: 10px;
+  }
+
+  .toggle-buttons button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  #tenant-list {
+    padding: 10px;
+  }
+
+  #tenant-list li {
+    padding: 8px;
+  }
+
+  #tenant-list a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-section h2 {
+    font-size: 20px;
+  }
+
+  .toggle-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust grid further for very small devices */
+  }
+
+  .property-dropdown {
+    align-items: center;
+  }
+
+  .property-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  height: 40px;
+  width: 40px;
+}
+
+header nav {
+  display: flex;
+  gap: 15px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #007bff;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    justify-content: center;
+    gap: 10px;
+    width: 100%; /* Full width */
+    text-align: center; /* Center items */
+  }
+
+  header nav a {
+    flex: 1;
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  header .logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  header nav a {
+    font-size: 10px; /* Further adjust font size for very small screens */
+  }
+}
