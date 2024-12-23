@@ -14,7 +14,7 @@ import Subscription from './components/Subscription';
 import EditProperty from './components/EditProperty';
 import AddProperty from './components/AddProperty';
 import Profile from './components/Profile';
-import ProtectedRoute from './ProtectedRoute';
+// import ProtectedRoute from './ProtectedRoute';
 
 function App() {
   return (
@@ -43,11 +43,11 @@ function App() {
           </ProtectedRoute>
         } />
 
-        <Route path="/pendings/:propertyId" element={
-          <ProtectedRoute>
-            <Pendings />
-          </ProtectedRoute>
-        } />
+        // <Route path="/pendings/:propertyId" element={
+        //   <ProtectedRoute>
+        //     <Pendings />
+        //   </ProtectedRoute>
+        // } />
 
         <Route path="/profile/:id" element={
           <ProtectedRoute>
