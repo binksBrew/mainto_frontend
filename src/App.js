@@ -43,11 +43,7 @@ function App() {
           </ProtectedRoute>
         } />
 
-        // <Route path="/pendings/:propertyId" element={
-        //   <ProtectedRoute>
-        //     <Pendings />
-        //   </ProtectedRoute>
-        // } />
+        
 
         <Route path="/profile/:id" element={
           <ProtectedRoute>
